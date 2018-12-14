@@ -15,10 +15,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += main.cpp \
-    IPC_shm.cpp
+    IPC_shm.cpp \
+    ssd_detect.cpp
 
 HEADERS += \
-    IPC_shm.hpp
+    IPC_shm.hpp \
+    ssd_detect.h
 
 #adding dynamic links of CAFFE and dependencies
 

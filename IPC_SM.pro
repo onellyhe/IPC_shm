@@ -16,17 +16,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp \
     IPC_shm.cpp \
-    ssd_detect.cpp
+    ssd_detect.cpp \
+    yolov3_detect.cpp
 
 HEADERS += \
     IPC_shm.hpp \
-    ssd_detect.h
+    ssd_detect.h \
+    yolov3_detect.h
 
 #adding dynamic links of CAFFE and dependencies
 
 #caffe
-INCLUDEPATH += /home/onelly/git/quantize_ssd/include /home/onelly/git/quantize_ssd/build/src
-LIBS += -L/home/onelly/git/quantize_ssd/build/lib
+INCLUDEPATH += /home/onelly/tsq/caffe-master/include /home/onelly/tsq/caffe-master/build/src
+LIBS += -L/home/onelly/tsq/caffe-master/build/lib
 LIBS += -lcaffe
 
 #cuda
@@ -55,3 +57,9 @@ LIBS += -lcudnn
 #blas
 #LIBS += -latlas
 LIBS += -lopenblas
+
+#yolov3
+INCLUDEPATH += /home/onelly/tsq/caffe-yolov3-master/build/x86_64/include
+LIBS += -L/home/onelly/tsq/caffe-yolov3-master/build/x86_64/lib
+LIBS += -lsysDetectSpeed
+

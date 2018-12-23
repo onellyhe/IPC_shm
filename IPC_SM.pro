@@ -26,10 +26,7 @@ HEADERS += \
 
 #adding dynamic links of CAFFE and dependencies
 
-#caffe
-INCLUDEPATH += /home/onelly/tsq/caffe-master/include /home/onelly/tsq/caffe-master/build/src
-LIBS += -L/home/onelly/tsq/caffe-master/build/lib
-LIBS += -lcaffe
+
 
 #cuda
 INCLUDEPATH += /usr/local/cuda/include
@@ -58,8 +55,18 @@ LIBS += -lcudnn
 #LIBS += -latlas
 LIBS += -lopenblas
 
-#yolov3
-INCLUDEPATH += /home/onelly/tsq/caffe-yolov3-master/build/x86_64/include
-LIBS += -L/home/onelly/tsq/caffe-yolov3-master/build/x86_64/lib
-LIBS += -lsysDetectSpeed
+#TSQ_conf
+##yolov3
+#INCLUDEPATH += /home/onelly/tsq/caffe-yolov3-master/build/x86_64/include
+#LIBS += -L/home/onelly/tsq/caffe-yolov3-master/build/x86_64/lib
+#LIBS += -lsysDetectSpeed
+##caffe
+#INCLUDEPATH += /home/onelly/tsq/caffe-master/include /home/onelly/tsq/caffe-master/build/src
+#LIBS += -L/home/onelly/tsq/caffe-master/build/lib
+#LIBS += -lcaffe
 
+#onelly_at_home_conf
+#caffe
+INCLUDEPATH += /home/onelly/git/quantize_ssd/include /home/onelly/git/quantize_ssd/build/src
+LIBS += -L/home/onelly/git/quantize_ssd/build/lib
+LIBS += -lcaffe

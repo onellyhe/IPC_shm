@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.5.0, 2018-12-24T00:59:40. -->
+<!-- Written by QtCreator 4.5.0, 2018-12-24T15:52:40. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{d7e7dcef-21b4-4008-8779-53f33d08e6d4}</value>
+  <value type="QByteArray">{9adbe3e1-aca1-4bf3-824e-274b71c05aa2}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -303,10 +303,10 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">IPC_SM</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/onelly/git/Qt/IPC_SM/IPC_SM.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">IPC_SM2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/onelly/git/Qt/IPC_shm/IPC_SM.pro</value>
     <value type="bool" key="QmakeProjectManager.QmakeRunConfiguration.UseLibrarySearchPath">true</value>
-    <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.CommandLineArguments">--szModelFile=/home/onelly/model/Vel_Pes_Res18_M1_visp_deploy_bnmerge.prototxt --szWeights=/home/onelly/model/1109_bias_bnmerge.caffemodel</value>
+    <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.CommandLineArguments">--szModelFile=/home/onelly/tsq/caffe-yolov3-master/yolov3.prototxt --szWeights=/home/onelly/tsq/caffe-yolov3-master/yolov3.caffemodel</value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.ProFile">IPC_SM.pro</value>
     <value type="bool" key="Qt4ProjectManager.Qt4RunConfiguration.UseDyldImageSuffix">false</value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.UserWorkingDirectory"></value>

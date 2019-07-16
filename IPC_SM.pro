@@ -49,7 +49,7 @@ LIBS += -llmdb
 LIBS += -lboost_thread -lstdc++
 
 #cudnn
-LIBS += -lcudnn
+#LIBS += -lcudnn
 
 #blas
 #LIBS += -latlas

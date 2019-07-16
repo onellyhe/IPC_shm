@@ -129,6 +129,8 @@ std::vector<vector<int> > yolov3_detect::Detect(cv::Mat input,int w,int h, int c
             int right = (b.x+b.w/2.)*im.w;
             int top   = (b.y-b.h/2.)*im.h;
             int bot   = (b.y+b.h/2.)*im.h;
+            if((right-left)*(bot-top)>0.006*im.h*im.w)
+                continue;
             vector<int> detection_of_obj;
             detection_of_obj.push_back(cls);
             detection_of_obj.push_back(left);

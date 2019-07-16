@@ -690,7 +690,8 @@ int main(int argc, char* argv[])
                     char *dst = p_imageinfo->recognition;
                     sprintf(dst,"%s%s%s\0",p_imageinfo->year,p_imageinfo->month,p_imageinfo->day);
                     sprintf(dst,"%s-%d-%d-%d_%d\0",dst,p_imageinfo->areaid,p_imageinfo->batch,p_imageinfo->frames,gpu_id);
-                    sprintf(dst,"%s %d %d %d %d %d\0",dst,detections[0][0],detections[0][1],detections[0][3],detections[0][2],detections[0][4]);
+                    sprintf(dst,"%s|%d|\0",dst,detections.size());
+                    sprintf(dst,"%s%d %d %d %d %d\0",dst,detections[0][0],detections[0][1],detections[0][3],detections[0][2],detections[0][4]);
                     for (int x = 1; x < detections.size(); ++x) {
                         const vector<int>& d = detections[x];
                         // Detection format: [cls_id,left,right,top,bot]
@@ -701,7 +702,7 @@ int main(int argc, char* argv[])
                     for(p_imageinfo->detlen=0;p_imageinfo->detlen<1024000;p_imageinfo->detlen++){
                         if(dst[p_imageinfo->detlen]==0)break;
                     }
-                    p_imageinfo->detlen++;
+                    //p_imageinfo->detlen++;
                     printf("detlen:%d\n",p_imageinfo->detlen);
                 }
                 //status change
